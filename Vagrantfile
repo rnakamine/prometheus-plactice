@@ -10,7 +10,7 @@ Vagrant.configure("2") do |config|
     server.vm.network :private_network, ip: "192.168.10.11"
   end
 
-  config.vm.define :server do |node|
+  config.vm.define :node do |node|
     node.vm.hostname = "node.prometheus.node"
     node.vm.network :private_network, ip: "192.168.10.21"
   end
